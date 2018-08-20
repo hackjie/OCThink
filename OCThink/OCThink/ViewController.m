@@ -44,8 +44,7 @@
 
 - (void)jump
 {
-//    TimerViewController *timerVC = [[TimerViewController alloc] init];
-    StringViewController *timerVC = [[StringViewController alloc] init];
+    TimerViewController *timerVC = [[TimerViewController alloc] init];
 
     [self.navigationController pushViewController:timerVC animated:YES];
 }

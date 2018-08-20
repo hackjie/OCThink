@@ -10,6 +10,7 @@
 		B634E8932125258D0028D2EF /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E8922125258D0028D2EF /* TimerViewController.m */; };
 		B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89621252B8E0028D2EF /* BaseViewController.m */; };
 		B634E89B212553950028D2EF /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89A212553950028D2EF /* StringViewController.m */; };
+		B6382FD9212AC9F6002B4718 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6382FD8212AC9F6002B4718 /* WeakProxy.m */; };
 		B668B57521241EC400F60A79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B668B57421241EC400F60A79 /* AppDelegate.m */; };
 		B668B57821241EC400F60A79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B668B57721241EC400F60A79 /* ViewController.m */; };
 		B668B57B21241EC400F60A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B668B57921241EC400F60A79 /* Main.storyboard */; };
@@ -26,6 +27,8 @@
 		B634E89621252B8E0028D2EF /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 		B634E899212553950028D2EF /* StringViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StringViewController.h; sourceTree = "<group>"; };
 		B634E89A212553950028D2EF /* StringViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StringViewController.m; sourceTree = "<group>"; };
+		B6382FD7212AC9F6002B4718 /* WeakProxy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakProxy.h; sourceTree = "<group>"; };
+		B6382FD8212AC9F6002B4718 /* WeakProxy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakProxy.m; sourceTree = "<group>"; };
 		B668B57021241EC400F60A79 /* OCThink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCThink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B668B57321241EC400F60A79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B668B57421241EC400F60A79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -56,6 +59,8 @@
 			children = (
 				B634E8912125258D0028D2EF /* TimerViewController.h */,
 				B634E8922125258D0028D2EF /* TimerViewController.m */,
+				B6382FD7212AC9F6002B4718 /* WeakProxy.h */,
+				B6382FD8212AC9F6002B4718 /* WeakProxy.m */,
 			);
 			path = NSTimer;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6382FD9212AC9F6002B4718 /* WeakProxy.m in Sources */,
 				B668B57821241EC400F60A79 /* ViewController.m in Sources */,
 				B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */,
 				B668B58C21241F5C00F60A79 /* SubProxy.m in Sources */,

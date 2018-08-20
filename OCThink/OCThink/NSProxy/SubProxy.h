@@ -9,6 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface SubProxy : NSProxy
-
+// 代理别人来做什么
 - (instancetype)initWithTarget:(id)target;
 @end
