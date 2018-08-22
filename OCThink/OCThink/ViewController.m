@@ -10,6 +10,7 @@
 #import "SubProxy.h"
 #import "TimerViewController.h"
 #import "StringViewController.h"
+#import "MsgViewController.h"
 
 @interface ViewController ()
 
@@ -44,7 +45,8 @@
 
 - (void)jump
 {
-    TimerViewController *timerVC = [[TimerViewController alloc] init];
+    MsgViewController *timerVC = [[MsgViewController alloc] init];
+    [timerVC respondsToSelector:@selector(haha)];
 
     [self.navigationController pushViewController:timerVC animated:YES];
 }
