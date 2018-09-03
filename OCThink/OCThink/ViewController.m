@@ -11,7 +11,7 @@
 #import "TimerViewController.h"
 #import "StringViewController.h"
 #import "MsgViewController.h"
-#import "FontViewController.h"
+#import "TextStyleViewController.h"
 
 @interface ViewController ()
 
@@ -46,7 +46,7 @@
 
 - (void)jump
 {
-    FontViewController *VC = [[FontViewController alloc] init];
+    TextStyleViewController *VC = [[TextStyleViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 

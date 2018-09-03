@@ -6,14 +6,14 @@
 //  Copyright © 2018 leoli. All rights reserved.
 //
 
-#import "FontViewController.h"
+#import "TextStyleViewController.h"
 
-@interface FontViewController ()
+@interface TextStyleViewController ()
 @property (nonatomic, strong) UILabel *textLabel;
 @property (nonatomic, strong) UILabel *oneLineLabel;
 @end
 
-@implementation FontViewController
+@implementation TextStyleViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
