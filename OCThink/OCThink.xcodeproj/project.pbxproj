@@ -13,6 +13,7 @@
 		B6382FD9212AC9F6002B4718 /* WeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = B6382FD8212AC9F6002B4718 /* WeakProxy.m */; };
 		B6382FDD212ACEAC002B4718 /* MsgViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6382FDC212ACEAC002B4718 /* MsgViewController.m */; };
 		B63CB453213CCE43000A113B /* TextStyleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B63CB452213CCE43000A113B /* TextStyleViewController.m */; };
+		B64181AE215F215C0093F5FD /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B64181AD215F215C0093F5FD /* ImageViewController.m */; };
 		B668B57521241EC400F60A79 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B668B57421241EC400F60A79 /* AppDelegate.m */; };
 		B668B57821241EC400F60A79 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B668B57721241EC400F60A79 /* ViewController.m */; };
 		B668B57B21241EC400F60A79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B668B57921241EC400F60A79 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 		B6382FDC212ACEAC002B4718 /* MsgViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MsgViewController.m; sourceTree = "<group>"; };
 		B63CB451213CCE43000A113B /* TextStyleViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextStyleViewController.h; sourceTree = "<group>"; };
 		B63CB452213CCE43000A113B /* TextStyleViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextStyleViewController.m; sourceTree = "<group>"; };
+		B64181AC215F215C0093F5FD /* ImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		B64181AD215F215C0093F5FD /* ImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
 		B668B57021241EC400F60A79 /* OCThink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OCThink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B668B57321241EC400F60A79 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B668B57421241EC400F60A79 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +110,15 @@
 			path = TextStyle;
 			sourceTree = "<group>";
 		};
+		B64181AB215F21450093F5FD /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				B64181AC215F215C0093F5FD /* ImageViewController.h */,
+				B64181AD215F215C0093F5FD /* ImageViewController.m */,
+			);
+			path = Image;
+			sourceTree = "<group>";
+		};
 		B668B56721241EC400F60A79 = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +138,7 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				B64181AB215F21450093F5FD /* Image */,
 				B63CB450213CCE28000A113B /* TextStyle */,
 				B6382FDA212ACE8A002B4718 /* MsgSend */,
 				B634E8982125537F0028D2EF /* NSString */,
@@ -228,6 +241,7 @@
 				B668B57821241EC400F60A79 /* ViewController.m in Sources */,
 				B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */,
 				B63CB453213CCE43000A113B /* TextStyleViewController.m in Sources */,
+				B64181AE215F215C0093F5FD /* ImageViewController.m in Sources */,
 				B668B58C21241F5C00F60A79 /* SubProxy.m in Sources */,
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
 				B668B58321241EC500F60A79 /* main.m in Sources */,
@@ -373,14 +387,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCJKW5QWK7;
 				INFOPLIST_FILE = OCThink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoli.OCThink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -389,14 +407,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = XCJKW5QWK7;
 				INFOPLIST_FILE = OCThink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoli.OCThink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

@@ -12,6 +12,7 @@
 #import "StringViewController.h"
 #import "MsgViewController.h"
 #import "TextStyleViewController.h"
+#import "ImageViewController.h"
 
 @interface ViewController ()
 
@@ -46,7 +47,7 @@
 
 - (void)jump
 {
-    TextStyleViewController *VC = [[TextStyleViewController alloc] init];
+    ImageViewController *VC = [[ImageViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 
