@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A04B0BA219042710089ED74 /* UIViewController+Test.m */; };
 		B634E8932125258D0028D2EF /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E8922125258D0028D2EF /* TimerViewController.m */; };
 		B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89621252B8E0028D2EF /* BaseViewController.m */; };
 		B634E89B212553950028D2EF /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89A212553950028D2EF /* StringViewController.m */; };
@@ -24,6 +25,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6A04B0B9219042710089ED74 /* UIViewController+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Test.h"; sourceTree = "<group>"; };
+		6A04B0BA219042710089ED74 /* UIViewController+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Test.m"; sourceTree = "<group>"; };
 		B634E8912125258D0028D2EF /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		B634E8922125258D0028D2EF /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		B634E89521252B8E0028D2EF /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -63,6 +66,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6A04B0AD21903F2E0089ED74 /* MethodSwizzling */ = {
+			isa = PBXGroup;
+			children = (
+				6A04B0B9219042710089ED74 /* UIViewController+Test.h */,
+				6A04B0BA219042710089ED74 /* UIViewController+Test.m */,
+			);
+			path = MethodSwizzling;
+			sourceTree = "<group>";
+		};
 		B634E890212525720028D2EF /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +150,7 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				6A04B0AD21903F2E0089ED74 /* MethodSwizzling */,
 				B64181AB215F21450093F5FD /* Image */,
 				B63CB450213CCE28000A113B /* TextStyle */,
 				B6382FDA212ACE8A002B4718 /* MsgSend */,
@@ -198,6 +211,7 @@
 				TargetAttributes = {
 					B668B56F21241EC400F60A79 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -243,6 +257,7 @@
 				B63CB453213CCE43000A113B /* TextStyleViewController.m in Sources */,
 				B64181AE215F215C0093F5FD /* ImageViewController.m in Sources */,
 				B668B58C21241F5C00F60A79 /* SubProxy.m in Sources */,
+				6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */,
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
 				B668B58321241EC500F60A79 /* main.m in Sources */,
 				B6382FDD212ACEAC002B4718 /* MsgViewController.m in Sources */,
@@ -387,6 +402,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCJKW5QWK7;
@@ -399,6 +415,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoli.OCThink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -407,6 +425,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = XCJKW5QWK7;
@@ -419,6 +438,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoli.OCThink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

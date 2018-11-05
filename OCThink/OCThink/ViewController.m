@@ -47,7 +47,7 @@
 
 - (void)jump
 {
-    ImageViewController *VC = [[ImageViewController alloc] init];
+    TimerViewController *VC = [[TimerViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 

@@ -19,7 +19,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
 
-    [self proxyMethod];
+//    [self proxyMethod];
+    [self addTimer];
 }
 
 - (void)addTimer {
@@ -28,9 +29,13 @@
 }
 
 // 原因：timer 无法释放的原因
-// 查看 NSTimer 官方文档知道：timer 会对它的 target 进行强引用，即使传入 weak self 也不行
-// 实际上 Debug Memory Graph 查看引用情况发现 target 根本没有指向并对 timer 进行强引用，
-// 真正的原因是 NSRunLoop 会对运行在它之上的所有 timer 进行强引用
+
+// 真正的原因是 NSRunLoop 会对运行在它之上的所有 timer 进行强引用, timer 会对它的 target 进行强引用
+// 即使传入 weak self 也不行，那 target 如果是 self(控制器或者其他)，那就不能走 dealloc 方法，
+// 而我们需要一个合适的时机在对应的线程调用 [_timer invalidate] 进行销毁
+
+//Note in particular that run loops maintain strong references to their timers, so you don’t have to maintain your own strong reference to a timer after you have added it to a run loop.
+//Target is the object to which to send the message specified by aSelector when the timer fires. The timer maintains a strong reference to target until it (the timer) is invalidated.
 
 // 1.无用
 // timer 对 target 进行了强引用，所以走不到这
