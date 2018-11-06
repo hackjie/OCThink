@@ -21,9 +21,17 @@
 
 @implementation ViewController
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    //    self.navigationController.navigationBarHidden = false;
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    self.title = @"Start";
 
     UIButton *jumpBtn = [[UIButton alloc] init];
     jumpBtn.frame = CGRectMake(60, 120, 80, 40);

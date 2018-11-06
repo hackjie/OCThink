@@ -19,6 +19,9 @@
     [super viewWillAppear:animated];
 //    self.navigationController.navigationBarHidden = true;
     [self.navigationController setNavigationBarHidden:YES animated:YES];
+    
+    // 隐藏导航栏会导致侧滑手势失效问题
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
 }
 
 - (void)viewDidLoad {
@@ -33,6 +36,8 @@
     [self.view addSubview:jumpBtn];
     
     self.title = @"Two";
+    
+    [self sayHello];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,6 +49,11 @@
 {
     NavigationTestTwoViewController *VC = [[NavigationTestTwoViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
+}
+
+- (void)sayHello
+{
+    
 }
 
 @end

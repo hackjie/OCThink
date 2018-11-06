@@ -25,4 +25,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)sayHello {
+    NSLog(@"Hello");
+}
+
 @end
