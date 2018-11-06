@@ -13,6 +13,7 @@
 #import "MsgViewController.h"
 #import "TextStyleViewController.h"
 #import "ImageViewController.h"
+#import "NavigationTestOneViewController.h"
 
 @interface ViewController ()
 
@@ -47,7 +48,7 @@
 
 - (void)jump
 {
-    TimerViewController *VC = [[TimerViewController alloc] init];
+    NavigationTestOneViewController *VC = [[NavigationTestOneViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 
