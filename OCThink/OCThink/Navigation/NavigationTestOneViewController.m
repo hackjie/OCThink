@@ -8,6 +8,7 @@
 
 #import "NavigationTestOneViewController.h"
 #import "NavigationTestTwoViewController.h"
+#import <objc/runtime.h>
 
 @interface NavigationTestOneViewController ()
 
@@ -36,8 +37,10 @@
     [self.view addSubview:jumpBtn];
     
     self.title = @"Two";
-    
     [self sayHello];
+    [super sayHello];
+    
+    [self logClassMethods];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -51,9 +54,48 @@
     [self.navigationController pushViewController:VC animated:YES];
 }
 
-- (void)sayHello
++ (void)load
 {
-    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        Class class = [self class];
+
+        SEL originalSelector = @selector(sayHello);
+        SEL swizzledSelector = @selector(haha_sayHello);
+
+        Method originalMethod = class_getInstanceMethod(class, originalSelector);
+        Method swizzledMethod = class_getInstanceMethod(class, swizzledSelector);
+
+        BOOL success = class_addMethod(class, originalSelector, method_getImplementation(swizzledMethod), method_getTypeEncoding(swizzledMethod));
+
+        if (success) {
+            // 将方法添加到当前类
+            class_replaceMethod(class, swizzledSelector, method_getImplementation(originalMethod), method_getTypeEncoding(originalMethod));
+        } else {
+            method_exchangeImplementations(originalMethod, swizzledMethod);
+        }
+    });
+}
+
+//- (void)sayHello {
+//    NSLog(@"this hello");
+//}
+
+- (void)haha_sayHello {
+    [self haha_sayHello];
+    NSLog(@"haha_sayHello");
+}
+
+- (void)logClassMethods
+{
+    unsigned int count;
+    Method *methods = class_copyMethodList([self class], &count);
+    for (int i = 0; i < count; i++) {
+        Method method = methods[i];
+        SEL selector = method_getName(method);
+        NSString *name = NSStringFromSelector(selector);
+        NSLog(@"方法 名字 ==== %@",name);
+    }
 }
 
 @end

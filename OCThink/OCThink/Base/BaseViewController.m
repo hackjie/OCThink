@@ -26,7 +26,7 @@
 }
 
 - (void)sayHello {
-    NSLog(@"Hello");
+    NSLog(@"sayHello");
 }
 
 @end
