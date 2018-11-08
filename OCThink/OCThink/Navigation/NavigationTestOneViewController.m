@@ -18,11 +18,16 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-//    self.navigationController.navigationBarHidden = true;
+    
     [self.navigationController setNavigationBarHidden:YES animated:YES];
     
     // 隐藏导航栏会导致侧滑手势失效问题
     self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
 }
 
 - (void)viewDidLoad {
