@@ -10,6 +10,7 @@
 		6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */; };
 		6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AF219180860027773C /* NavigationTestTwoViewController.m */; };
 		6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A04B0BA219042710089ED74 /* UIViewController+Test.m */; };
+		6A8E49F421997CDA0063BCAC /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */; };
 		B634E8932125258D0028D2EF /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E8922125258D0028D2EF /* TimerViewController.m */; };
 		B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89621252B8E0028D2EF /* BaseViewController.m */; };
 		B634E89B212553950028D2EF /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89A212553950028D2EF /* StringViewController.m */; };
@@ -33,6 +34,8 @@
 		6A0039AF219180860027773C /* NavigationTestTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTestTwoViewController.m; sourceTree = "<group>"; };
 		6A04B0B9219042710089ED74 /* UIViewController+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Test.h"; sourceTree = "<group>"; };
 		6A04B0BA219042710089ED74 /* UIViewController+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Test.m"; sourceTree = "<group>"; };
+		6A8E49F221997CDA0063BCAC /* UINavigationController+Navbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Navbar.h"; sourceTree = "<group>"; };
+		6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Navbar.m"; sourceTree = "<group>"; };
 		B634E8912125258D0028D2EF /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		B634E8922125258D0028D2EF /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		B634E89521252B8E0028D2EF /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -79,6 +82,8 @@
 				6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */,
 				6A0039AE219180860027773C /* NavigationTestTwoViewController.h */,
 				6A0039AF219180860027773C /* NavigationTestTwoViewController.m */,
+				6A8E49F221997CDA0063BCAC /* UINavigationController+Navbar.h */,
+				6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -269,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A8E49F421997CDA0063BCAC /* UINavigationController+Navbar.m in Sources */,
 				B6382FD9212AC9F6002B4718 /* WeakProxy.m in Sources */,
 				B668B57821241EC400F60A79 /* ViewController.m in Sources */,
 				B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */,

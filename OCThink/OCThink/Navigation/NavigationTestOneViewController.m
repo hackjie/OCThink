@@ -9,26 +9,33 @@
 #import "NavigationTestOneViewController.h"
 #import "NavigationTestTwoViewController.h"
 #import <objc/runtime.h>
+#import "UINavigationController+Navbar.h"
 
+// 使用 viewWillAppear 和 viewWillDisappear 处理隐藏导航栏
+// 但是主要会遇到3个问题：
+
+// 1. 隐藏会导致侧滑手势失效，需要重新制定self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+// 2. tabbar 切换的时候会出现上移的问题
+// 3. 连续两个隐藏导航栏，第二个侧滑回来会出现断层
 @interface NavigationTestOneViewController ()
 
 @end
 
 @implementation NavigationTestOneViewController
 
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    [self.navigationController setNavigationBarHidden:YES animated:YES];
-    
-    // 隐藏导航栏会导致侧滑手势失效问题
-    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
-}
-
-- (void)viewWillDisappear:(BOOL)animated {
-    [super viewWillDisappear:animated];
-    [self.navigationController setNavigationBarHidden:NO animated:YES];
-}
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//
+//    [self.navigationController setNavigationBarHidden:YES animated:animated];
+//
+//    // 隐藏导航栏会导致侧滑手势失效问题
+//    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated {
+//    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO animated:animated];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -46,6 +53,9 @@
     [super sayHello];
     
     [self logClassMethods];
+    
+    self.lj_prefersNavigationBarHidden = YES;
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
 }
 
 - (void)didReceiveMemoryWarning {

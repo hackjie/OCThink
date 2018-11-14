@@ -14,6 +14,7 @@
 #import "TextStyleViewController.h"
 #import "ImageViewController.h"
 #import "NavigationTestOneViewController.h"
+#import "UINavigationController+Navbar.h"
 
 @interface ViewController ()
 

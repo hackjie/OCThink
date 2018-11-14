@@ -7,18 +7,34 @@
 //
 
 #import "NavigationTestTwoViewController.h"
+#import "UINavigationController+Navbar.h"
 
 @interface NavigationTestTwoViewController ()
 
 @end
 
 @implementation NavigationTestTwoViewController
+//- (void)viewWillAppear:(BOOL)animated {
+//    [super viewWillAppear:animated];
+//
+//    [self.navigationController setNavigationBarHidden:YES animated:animated];
+//
+//    // 隐藏导航栏会导致侧滑手势失效问题
+//    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
+//}
+//
+//- (void)viewWillDisappear:(BOOL)animated {
+//    [super viewWillDisappear:animated];
+//    [self.navigationController setNavigationBarHidden:NO animated:animated];
+//}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
     self.title = @"Three";
+    self.lj_prefersNavigationBarHidden = YES;
+    self.navigationController.interactivePopGestureRecognizer.delegate = (id)self;
 }
 
 - (void)didReceiveMemoryWarning {
