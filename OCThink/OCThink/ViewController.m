@@ -57,7 +57,7 @@
 
 - (void)jump
 {
-    NavigationTestOneViewController *VC = [[NavigationTestOneViewController alloc] init];
+    MsgViewController *VC = [[MsgViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 

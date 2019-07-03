@@ -45,7 +45,7 @@
 {
     [self lj_viewDidLoad];
     
-    NSLog(@"swizzling succeed");
+//    NSLog(@"swizzling succeed");
 }
 
 @end
