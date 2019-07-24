@@ -10,6 +10,7 @@
 		6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */; };
 		6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AF219180860027773C /* NavigationTestTwoViewController.m */; };
 		6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A04B0BA219042710089ED74 /* UIViewController+Test.m */; };
+		6A205CF522E814BB006168C0 /* WeakStrongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A205CF422E814BB006168C0 /* WeakStrongViewController.m */; };
 		6A8E49F421997CDA0063BCAC /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */; };
 		6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B6DC422CBB0AA009C1C1D /* YingDuan.m */; };
 		B634E8932125258D0028D2EF /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E8922125258D0028D2EF /* TimerViewController.m */; };
@@ -35,6 +36,8 @@
 		6A0039AF219180860027773C /* NavigationTestTwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTestTwoViewController.m; sourceTree = "<group>"; };
 		6A04B0B9219042710089ED74 /* UIViewController+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+Test.h"; sourceTree = "<group>"; };
 		6A04B0BA219042710089ED74 /* UIViewController+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Test.m"; sourceTree = "<group>"; };
+		6A205CF322E814BB006168C0 /* WeakStrongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakStrongViewController.h; sourceTree = "<group>"; };
+		6A205CF422E814BB006168C0 /* WeakStrongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakStrongViewController.m; sourceTree = "<group>"; };
 		6A8E49F221997CDA0063BCAC /* UINavigationController+Navbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Navbar.h"; sourceTree = "<group>"; };
 		6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Navbar.m"; sourceTree = "<group>"; };
 		6A9B6DC322CBB0AA009C1C1D /* YingDuan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YingDuan.h; sourceTree = "<group>"; };
@@ -98,6 +101,15 @@
 				6A04B0BA219042710089ED74 /* UIViewController+Test.m */,
 			);
 			path = MethodSwizzling;
+			sourceTree = "<group>";
+		};
+		6A205CF222E8148A006168C0 /* weakstrong */ = {
+			isa = PBXGroup;
+			children = (
+				6A205CF322E814BB006168C0 /* WeakStrongViewController.h */,
+				6A205CF422E814BB006168C0 /* WeakStrongViewController.m */,
+			);
+			path = weakstrong;
 			sourceTree = "<group>";
 		};
 		B634E890212525720028D2EF /* NSTimer */ = {
@@ -177,6 +189,7 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				6A205CF222E8148A006168C0 /* weakstrong */,
 				6A0039AA219180400027773C /* Navigation */,
 				6A04B0AD21903F2E0089ED74 /* MethodSwizzling */,
 				B64181AB215F21450093F5FD /* Image */,
@@ -295,6 +308,7 @@
 				B6382FDD212ACEAC002B4718 /* MsgViewController.m in Sources */,
 				B634E89B212553950028D2EF /* StringViewController.m in Sources */,
 				B668B57521241EC400F60A79 /* AppDelegate.m in Sources */,
+				6A205CF522E814BB006168C0 /* WeakStrongViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
