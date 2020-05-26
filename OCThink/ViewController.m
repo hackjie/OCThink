@@ -16,6 +16,7 @@
 #import "NavigationTestOneViewController.h"
 #import "UINavigationController+Navbar.h"
 #import "AutolayoutViewController.h"
+#import "UIComponentViewController.h"
 
 @interface ViewController ()
 
@@ -58,7 +59,7 @@
 
 - (void)jump
 {
-    AutolayoutViewController *VC = [[AutolayoutViewController alloc] init];
+    UIComponentViewController *VC = [[UIComponentViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 

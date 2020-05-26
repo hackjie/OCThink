@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32116F68247BACEF007F0D93 /* CustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 32116F67247BACEF007F0D93 /* CustomPageControl.m */; };
+		32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32116F6A247BADB1007F0D93 /* UIComponentViewController.m */; };
 		327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A25672473B60000CB41BE /* AutolayoutViewController.m */; };
 		6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */; };
 		6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AF219180860027773C /* NavigationTestTwoViewController.m */; };
@@ -31,6 +33,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32116F66247BACEF007F0D93 /* CustomPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPageControl.h; sourceTree = "<group>"; };
+		32116F67247BACEF007F0D93 /* CustomPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPageControl.m; sourceTree = "<group>"; };
+		32116F69247BADB1007F0D93 /* UIComponentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentViewController.h; sourceTree = "<group>"; };
+		32116F6A247BADB1007F0D93 /* UIComponentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIComponentViewController.m; sourceTree = "<group>"; };
 		327A25662473B60000CB41BE /* AutolayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutViewController.h; sourceTree = "<group>"; };
 		327A25672473B60000CB41BE /* AutolayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
 		6A0039AB2191806E0027773C /* NavigationTestOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestOneViewController.h; sourceTree = "<group>"; };
@@ -84,6 +90,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32116F64247BACCA007F0D93 /* UIComponent */ = {
+			isa = PBXGroup;
+			children = (
+				32116F65247BACD3007F0D93 /* UIPageControl */,
+				32116F69247BADB1007F0D93 /* UIComponentViewController.h */,
+				32116F6A247BADB1007F0D93 /* UIComponentViewController.m */,
+			);
+			path = UIComponent;
+			sourceTree = "<group>";
+		};
+		32116F65247BACD3007F0D93 /* UIPageControl */ = {
+			isa = PBXGroup;
+			children = (
+				32116F66247BACEF007F0D93 /* CustomPageControl.h */,
+				32116F67247BACEF007F0D93 /* CustomPageControl.m */,
+			);
+			path = UIPageControl;
+			sourceTree = "<group>";
+		};
 		327A25652473B5D400CB41BE /* AutoLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -201,6 +226,7 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				32116F64247BACCA007F0D93 /* UIComponent */,
 				327A25652473B5D400CB41BE /* AutoLayout */,
 				6A205CF222E8148A006168C0 /* weakstrong */,
 				6A0039AA219180400027773C /* Navigation */,
@@ -311,6 +337,7 @@
 				B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */,
 				6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */,
 				6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */,
+				32116F68247BACEF007F0D93 /* CustomPageControl.m in Sources */,
 				B63CB453213CCE43000A113B /* TextStyleViewController.m in Sources */,
 				B64181AE215F215C0093F5FD /* ImageViewController.m in Sources */,
 				B668B58C21241F5C00F60A79 /* SubProxy.m in Sources */,
@@ -318,6 +345,7 @@
 				6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */,
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
 				6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */,
+				32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */,
 				B668B58321241EC500F60A79 /* main.m in Sources */,
 				B6382FDD212ACEAC002B4718 /* MsgViewController.m in Sources */,
 				B634E89B212553950028D2EF /* StringViewController.m in Sources */,
