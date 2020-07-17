@@ -16,12 +16,12 @@ typedef void(^_LJViewControllerWillAppearInjectBlock)(UIViewController *viewCont
 @end
 
 @implementation UIViewController (LJNavbarPrivate)
-+ (void)load
-{
-    Method originalMethod = class_getInstanceMethod(self, @selector(viewWillAppear:));
-    Method swizzledMethod = class_getInstanceMethod(self, @selector(lj_viewWillAppear:));
-    method_exchangeImplementations(originalMethod, swizzledMethod);
-}
+//+ (void)load
+//{
+//    Method originalMethod = class_getInstanceMethod(self, @selector(viewWillAppear:));
+//    Method swizzledMethod = class_getInstanceMethod(self, @selector(lj_viewWillAppear:));
+//    method_exchangeImplementations(originalMethod, swizzledMethod);
+//}
 
 - (void)lj_viewWillAppear:(BOOL)animated
 {

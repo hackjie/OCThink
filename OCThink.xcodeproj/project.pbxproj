@@ -7,9 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		32018D6C24B2C1CF000FF26A /* MailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32018D6B24B2C1CF000FF26A /* MailViewController.m */; };
 		32116F68247BACEF007F0D93 /* CustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 32116F67247BACEF007F0D93 /* CustomPageControl.m */; };
 		32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32116F6A247BADB1007F0D93 /* UIComponentViewController.m */; };
 		327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A25672473B60000CB41BE /* AutolayoutViewController.m */; };
+		32B4064A24C19D9400DF4C49 /* TestNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */; };
 		6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */; };
 		6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AF219180860027773C /* NavigationTestTwoViewController.m */; };
 		6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A04B0BA219042710089ED74 /* UIViewController+Test.m */; };
@@ -33,12 +35,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		32018D6A24B2C1CF000FF26A /* MailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MailViewController.h; sourceTree = "<group>"; };
+		32018D6B24B2C1CF000FF26A /* MailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MailViewController.m; sourceTree = "<group>"; };
 		32116F66247BACEF007F0D93 /* CustomPageControl.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomPageControl.h; sourceTree = "<group>"; };
 		32116F67247BACEF007F0D93 /* CustomPageControl.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomPageControl.m; sourceTree = "<group>"; };
 		32116F69247BADB1007F0D93 /* UIComponentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UIComponentViewController.h; sourceTree = "<group>"; };
 		32116F6A247BADB1007F0D93 /* UIComponentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIComponentViewController.m; sourceTree = "<group>"; };
 		327A25662473B60000CB41BE /* AutolayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutViewController.h; sourceTree = "<group>"; };
 		327A25672473B60000CB41BE /* AutolayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
+		32B4064824C19D9400DF4C49 /* TestNSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNSObjectViewController.h; sourceTree = "<group>"; };
+		32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNSObjectViewController.m; sourceTree = "<group>"; };
 		6A0039AB2191806E0027773C /* NavigationTestOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestOneViewController.h; sourceTree = "<group>"; };
 		6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTestOneViewController.m; sourceTree = "<group>"; };
 		6A0039AE219180860027773C /* NavigationTestTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestTwoViewController.h; sourceTree = "<group>"; };
@@ -90,6 +96,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		32018D6924B2C18B000FF26A /* Mail */ = {
+			isa = PBXGroup;
+			children = (
+				32018D6A24B2C1CF000FF26A /* MailViewController.h */,
+				32018D6B24B2C1CF000FF26A /* MailViewController.m */,
+			);
+			path = Mail;
+			sourceTree = "<group>";
+		};
 		32116F64247BACCA007F0D93 /* UIComponent */ = {
 			isa = PBXGroup;
 			children = (
@@ -116,6 +131,15 @@
 				327A25672473B60000CB41BE /* AutolayoutViewController.m */,
 			);
 			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		32B4064724C19D6D00DF4C49 /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				32B4064824C19D9400DF4C49 /* TestNSObjectViewController.h */,
+				32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */,
+			);
+			path = Object;
 			sourceTree = "<group>";
 		};
 		6A0039AA219180400027773C /* Navigation */ = {
@@ -226,6 +250,8 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				32B4064724C19D6D00DF4C49 /* Object */,
+				32018D6924B2C18B000FF26A /* Mail */,
 				32116F64247BACCA007F0D93 /* UIComponent */,
 				327A25652473B5D400CB41BE /* AutoLayout */,
 				6A205CF222E8148A006168C0 /* weakstrong */,
@@ -335,6 +361,7 @@
 				B6382FD9212AC9F6002B4718 /* WeakProxy.m in Sources */,
 				B668B57821241EC400F60A79 /* ViewController.m in Sources */,
 				B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */,
+				32018D6C24B2C1CF000FF26A /* MailViewController.m in Sources */,
 				6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */,
 				6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */,
 				32116F68247BACEF007F0D93 /* CustomPageControl.m in Sources */,
@@ -346,6 +373,7 @@
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
 				6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */,
 				32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */,
+				32B4064A24C19D9400DF4C49 /* TestNSObjectViewController.m in Sources */,
 				B668B58321241EC500F60A79 /* main.m in Sources */,
 				B6382FDD212ACEAC002B4718 /* MsgViewController.m in Sources */,
 				B634E89B212553950028D2EF /* StringViewController.m in Sources */,
@@ -493,7 +521,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XCJKW5QWK7;
+				DEVELOPMENT_TEAM = 9J87B48WLP;
 				INFOPLIST_FILE = OCThink/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -516,7 +544,7 @@
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = XCJKW5QWK7;
+				DEVELOPMENT_TEAM = 9J87B48WLP;
 				INFOPLIST_FILE = OCThink/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

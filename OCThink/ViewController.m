@@ -17,6 +17,8 @@
 #import "UINavigationController+Navbar.h"
 #import "AutolayoutViewController.h"
 #import "UIComponentViewController.h"
+#import "MailViewController.h"
+#import "TestNSObjectViewController.h"
 
 @interface ViewController ()
 
@@ -59,7 +61,7 @@
 
 - (void)jump
 {
-    UIComponentViewController *VC = [[UIComponentViewController alloc] init];
+    TestNSObjectViewController *VC = [[TestNSObjectViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
 
