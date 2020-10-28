@@ -21,7 +21,7 @@
 #import "TestNSObjectViewController.h"
 
 @interface ViewController ()
-
+@property (nonatomic, strong) UIButton *jumpBtn;
 @end
 
 @implementation ViewController
@@ -44,6 +44,23 @@
     [jumpBtn setTitle:@"哈哈" forState:UIControlStateNormal];
     [jumpBtn addTarget:self action:@selector(jump) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:jumpBtn];
+    _jumpBtn = jumpBtn;
+    
+    self.view.backgroundColor = [UIColor lightGrayColor];
+}
+
+- (void)viewSafeAreaInsetsDidChange
+{
+    //    self.bottomLayoutGuide.topAnchor;
+    //    self.view.safeAreaLayoutGuide.layoutFrame;
+}
+
+- (void)viewDidLayoutSubviews
+{
+    [super viewDidLayoutSubviews];
+    //    self.bottomLayoutGuide.topAnchor;
+    //    self.view.safeAreaLayoutGuide.layoutFrame;
+    // safeArea 的调用时机很重要，viewDidLoad 里拿不到
 }
 
 - (void)didReceiveMemoryWarning {
