@@ -51,6 +51,7 @@
 
 - (void)viewSafeAreaInsetsDidChange
 {
+    [super viewSafeAreaInsetsDidChange];
     //    self.bottomLayoutGuide.topAnchor;
     //    self.view.safeAreaLayoutGuide.layoutFrame;
 }
