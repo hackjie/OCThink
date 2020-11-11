@@ -12,6 +12,7 @@
 		32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32116F6A247BADB1007F0D93 /* UIComponentViewController.m */; };
 		327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A25672473B60000CB41BE /* AutolayoutViewController.m */; };
 		32B4064A24C19D9400DF4C49 /* TestNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */; };
+		32C6FA74255B95060018D994 /* TestExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6FA73255B95060018D994 /* TestExceptions.m */; };
 		6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */; };
 		6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AF219180860027773C /* NavigationTestTwoViewController.m */; };
 		6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A04B0BA219042710089ED74 /* UIViewController+Test.m */; };
@@ -45,6 +46,8 @@
 		327A25672473B60000CB41BE /* AutolayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
 		32B4064824C19D9400DF4C49 /* TestNSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNSObjectViewController.h; sourceTree = "<group>"; };
 		32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNSObjectViewController.m; sourceTree = "<group>"; };
+		32C6FA72255B95060018D994 /* TestExceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestExceptions.h; sourceTree = "<group>"; };
+		32C6FA73255B95060018D994 /* TestExceptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestExceptions.m; sourceTree = "<group>"; };
 		6A0039AB2191806E0027773C /* NavigationTestOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestOneViewController.h; sourceTree = "<group>"; };
 		6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTestOneViewController.m; sourceTree = "<group>"; };
 		6A0039AE219180860027773C /* NavigationTestTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestTwoViewController.h; sourceTree = "<group>"; };
@@ -140,6 +143,15 @@
 				32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */,
 			);
 			path = Object;
+			sourceTree = "<group>";
+		};
+		32C6FA71255B94F50018D994 /* Exception */ = {
+			isa = PBXGroup;
+			children = (
+				32C6FA72255B95060018D994 /* TestExceptions.h */,
+				32C6FA73255B95060018D994 /* TestExceptions.m */,
+			);
+			path = Exception;
 			sourceTree = "<group>";
 		};
 		6A0039AA219180400027773C /* Navigation */ = {
@@ -250,6 +262,7 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				32C6FA71255B94F50018D994 /* Exception */,
 				32B4064724C19D6D00DF4C49 /* Object */,
 				32018D6924B2C18B000FF26A /* Mail */,
 				32116F64247BACCA007F0D93 /* UIComponent */,
@@ -366,6 +379,7 @@
 				6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */,
 				32116F68247BACEF007F0D93 /* CustomPageControl.m in Sources */,
 				B63CB453213CCE43000A113B /* TextStyleViewController.m in Sources */,
+				32C6FA74255B95060018D994 /* TestExceptions.m in Sources */,
 				B64181AE215F215C0093F5FD /* ImageViewController.m in Sources */,
 				B668B58C21241F5C00F60A79 /* SubProxy.m in Sources */,
 				327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */,

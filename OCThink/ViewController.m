@@ -19,6 +19,7 @@
 #import "UIComponentViewController.h"
 #import "MailViewController.h"
 #import "TestNSObjectViewController.h"
+#import "TestExceptions.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) UIButton *jumpBtn;
@@ -47,6 +48,39 @@
     _jumpBtn = jumpBtn;
     
     self.view.backgroundColor = [UIColor lightGrayColor];
+    
+    // less use @try catch, but sometimes can use it to debug
+    @try {
+        TestExceptions *exception = [[TestExceptions alloc] init];
+        // exception not release
+        @throw [[NSException alloc] initWithName:@"主动异常" reason:@"这是错误原因" userInfo:nil];
+    }
+    @catch (NSException *e) {
+        NSLog(@"%@",e);
+    }
+    
+    // like this eg
+    NSArray* arraytest = [[NSArray alloc] init];
+     
+    @try
+    {
+      // Attempt access to an empty array
+      NSLog(@"Object: %@", [arraytest objectAtIndex:0]);
+     
+    }
+    @catch (NSException *exception)
+    {
+      // Print exception information
+      NSLog( @"NSException caught" );
+      NSLog( @"Name: %@", exception.name);
+      NSLog( @"Reason: %@", exception.reason );
+      return;
+    }
+    @finally
+    {
+      // Cleanup, in both success and fail cases
+      NSLog( @"In finally block");
+    }
 }
 
 - (void)viewSafeAreaInsetsDidChange
