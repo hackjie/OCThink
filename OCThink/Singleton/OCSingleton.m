@@ -15,8 +15,7 @@ static OCSingleton *instance = nil;
 @end
 
 @implementation OCSingleton
-
-+(instancetype)shareInstance
++ (instancetype)shareInstance
 {
     return [[self alloc] init];
 }
@@ -26,6 +25,7 @@ static OCSingleton *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [super init];
+        NSLog(@"%@:----创建了",NSStringFromSelector(_cmd));
     });
     return instance;
 }
@@ -45,6 +45,12 @@ static OCSingleton *instance = nil;
 
 - (nonnull id)mutableCopyWithZone:(nullable NSZone *)zone {
     return instance;
+}
+
++ (void)destoryInstance
+{
+    instance = nil;
+    NSLog(@"%@:----释放了",NSStringFromSelector(_cmd));
 }
 
 @end

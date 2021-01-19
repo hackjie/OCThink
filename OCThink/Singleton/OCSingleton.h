@@ -11,7 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface OCSingleton : NSObject
-+(instancetype)shareInstance;
++ (instancetype)shareInstance;
++ (void)destoryInstance;
 @end
 
 NS_ASSUME_NONNULL_END

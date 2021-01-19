@@ -20,6 +20,7 @@
 #import "MailViewController.h"
 #import "TestNSObjectViewController.h"
 #import "TestExceptions.h"
+#import "OCSingleton.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) UIButton *jumpBtn;
@@ -55,6 +56,12 @@
     }];
     [array filterUsingPredicate:predicate];
     NSLog(@"%@", array);
+    
+    [OCSingleton shareInstance];
+    
+    sleep(2);
+    
+    [OCSingleton destoryInstance];
     
     
     // less use @try catch, but sometimes can use it to debug
