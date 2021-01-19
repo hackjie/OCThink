@@ -12,7 +12,10 @@
 		32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32116F6A247BADB1007F0D93 /* UIComponentViewController.m */; };
 		327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A25672473B60000CB41BE /* AutolayoutViewController.m */; };
 		32B4064A24C19D9400DF4C49 /* TestNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */; };
+		32BC338F25B6A2E30019FB89 /* OCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC338E25B6A2E30019FB89 /* OCSingleton.m */; };
 		32C6FA74255B95060018D994 /* TestExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6FA73255B95060018D994 /* TestExceptions.m */; };
+		32F4968F259C6394002B9B3A /* PlayerScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F4968E259C6394002B9B3A /* PlayerScrollView.m */; };
+		32F49692259C63BF002B9B3A /* VideoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 32F49691259C63BF002B9B3A /* VideoModel.m */; };
 		6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */; };
 		6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AF219180860027773C /* NavigationTestTwoViewController.m */; };
 		6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A04B0BA219042710089ED74 /* UIViewController+Test.m */; };
@@ -46,8 +49,14 @@
 		327A25672473B60000CB41BE /* AutolayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
 		32B4064824C19D9400DF4C49 /* TestNSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNSObjectViewController.h; sourceTree = "<group>"; };
 		32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNSObjectViewController.m; sourceTree = "<group>"; };
+		32BC338D25B6A2E30019FB89 /* OCSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSingleton.h; sourceTree = "<group>"; };
+		32BC338E25B6A2E30019FB89 /* OCSingleton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCSingleton.m; sourceTree = "<group>"; };
 		32C6FA72255B95060018D994 /* TestExceptions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestExceptions.h; sourceTree = "<group>"; };
 		32C6FA73255B95060018D994 /* TestExceptions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestExceptions.m; sourceTree = "<group>"; };
+		32F4968D259C6394002B9B3A /* PlayerScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlayerScrollView.h; sourceTree = "<group>"; };
+		32F4968E259C6394002B9B3A /* PlayerScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerScrollView.m; sourceTree = "<group>"; };
+		32F49690259C63BF002B9B3A /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
+		32F49691259C63BF002B9B3A /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
 		6A0039AB2191806E0027773C /* NavigationTestOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestOneViewController.h; sourceTree = "<group>"; };
 		6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTestOneViewController.m; sourceTree = "<group>"; };
 		6A0039AE219180860027773C /* NavigationTestTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestTwoViewController.h; sourceTree = "<group>"; };
@@ -145,6 +154,15 @@
 			path = Object;
 			sourceTree = "<group>";
 		};
+		32BC338B25B6A2BF0019FB89 /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				32BC338D25B6A2E30019FB89 /* OCSingleton.h */,
+				32BC338E25B6A2E30019FB89 /* OCSingleton.m */,
+			);
+			path = Singleton;
+			sourceTree = "<group>";
+		};
 		32C6FA71255B94F50018D994 /* Exception */ = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +170,17 @@
 				32C6FA73255B95060018D994 /* TestExceptions.m */,
 			);
 			path = Exception;
+			sourceTree = "<group>";
+		};
+		32F49689259C6304002B9B3A /* SwipeRoom */ = {
+			isa = PBXGroup;
+			children = (
+				32F4968D259C6394002B9B3A /* PlayerScrollView.h */,
+				32F4968E259C6394002B9B3A /* PlayerScrollView.m */,
+				32F49690259C63BF002B9B3A /* VideoModel.h */,
+				32F49691259C63BF002B9B3A /* VideoModel.m */,
+			);
+			path = SwipeRoom;
 			sourceTree = "<group>";
 		};
 		6A0039AA219180400027773C /* Navigation */ = {
@@ -262,6 +291,8 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				32BC338B25B6A2BF0019FB89 /* Singleton */,
+				32F49689259C6304002B9B3A /* SwipeRoom */,
 				32C6FA71255B94F50018D994 /* Exception */,
 				32B4064724C19D6D00DF4C49 /* Object */,
 				32018D6924B2C18B000FF26A /* Mail */,
@@ -374,8 +405,10 @@
 				B6382FD9212AC9F6002B4718 /* WeakProxy.m in Sources */,
 				B668B57821241EC400F60A79 /* ViewController.m in Sources */,
 				B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */,
+				32F4968F259C6394002B9B3A /* PlayerScrollView.m in Sources */,
 				32018D6C24B2C1CF000FF26A /* MailViewController.m in Sources */,
 				6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */,
+				32BC338F25B6A2E30019FB89 /* OCSingleton.m in Sources */,
 				6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */,
 				32116F68247BACEF007F0D93 /* CustomPageControl.m in Sources */,
 				B63CB453213CCE43000A113B /* TextStyleViewController.m in Sources */,
@@ -385,6 +418,7 @@
 				327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */,
 				6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */,
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
+				32F49692259C63BF002B9B3A /* VideoModel.m in Sources */,
 				6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */,
 				32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */,
 				32B4064A24C19D9400DF4C49 /* TestNSObjectViewController.m in Sources */,

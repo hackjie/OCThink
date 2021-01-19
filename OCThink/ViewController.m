@@ -49,6 +49,14 @@
     
     self.view.backgroundColor = [UIColor lightGrayColor];
     
+    NSMutableArray *array = [@[@"hello://fff", @"hddhd"] mutableCopy];
+    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+        return ![evaluatedObject containsString:@"hello:"];
+    }];
+    [array filterUsingPredicate:predicate];
+    NSLog(@"%@", array);
+    
+    
     // less use @try catch, but sometimes can use it to debug
     @try {
         TestExceptions *exception = [[TestExceptions alloc] init];
@@ -116,7 +124,6 @@
     TestNSObjectViewController *VC = [[TestNSObjectViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
 }
-
 
 @end
 
