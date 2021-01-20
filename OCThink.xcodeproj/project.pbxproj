@@ -11,6 +11,7 @@
 		32116F68247BACEF007F0D93 /* CustomPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 32116F67247BACEF007F0D93 /* CustomPageControl.m */; };
 		32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32116F6A247BADB1007F0D93 /* UIComponentViewController.m */; };
 		327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A25672473B60000CB41BE /* AutolayoutViewController.m */; };
+		327A687D25B821DE00EEBA29 /* ThreadSafeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 327A687C25B821DE00EEBA29 /* ThreadSafeTool.m */; };
 		32B4064A24C19D9400DF4C49 /* TestNSObjectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */; };
 		32BC338F25B6A2E30019FB89 /* OCSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 32BC338E25B6A2E30019FB89 /* OCSingleton.m */; };
 		32C6FA74255B95060018D994 /* TestExceptions.m in Sources */ = {isa = PBXBuildFile; fileRef = 32C6FA73255B95060018D994 /* TestExceptions.m */; };
@@ -47,6 +48,8 @@
 		32116F6A247BADB1007F0D93 /* UIComponentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UIComponentViewController.m; sourceTree = "<group>"; };
 		327A25662473B60000CB41BE /* AutolayoutViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AutolayoutViewController.h; sourceTree = "<group>"; };
 		327A25672473B60000CB41BE /* AutolayoutViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AutolayoutViewController.m; sourceTree = "<group>"; };
+		327A687B25B821DE00EEBA29 /* ThreadSafeTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreadSafeTool.h; sourceTree = "<group>"; };
+		327A687C25B821DE00EEBA29 /* ThreadSafeTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreadSafeTool.m; sourceTree = "<group>"; };
 		32B4064824C19D9400DF4C49 /* TestNSObjectViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestNSObjectViewController.h; sourceTree = "<group>"; };
 		32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestNSObjectViewController.m; sourceTree = "<group>"; };
 		32BC338D25B6A2E30019FB89 /* OCSingleton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCSingleton.h; sourceTree = "<group>"; };
@@ -143,6 +146,15 @@
 				327A25672473B60000CB41BE /* AutolayoutViewController.m */,
 			);
 			path = AutoLayout;
+			sourceTree = "<group>";
+		};
+		327A687A25B821B800EEBA29 /* Thread */ = {
+			isa = PBXGroup;
+			children = (
+				327A687B25B821DE00EEBA29 /* ThreadSafeTool.h */,
+				327A687C25B821DE00EEBA29 /* ThreadSafeTool.m */,
+			);
+			path = Thread;
 			sourceTree = "<group>";
 		};
 		32B4064724C19D6D00DF4C49 /* Object */ = {
@@ -291,6 +303,7 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				327A687A25B821B800EEBA29 /* Thread */,
 				32BC338B25B6A2BF0019FB89 /* Singleton */,
 				32F49689259C6304002B9B3A /* SwipeRoom */,
 				32C6FA71255B94F50018D994 /* Exception */,
@@ -417,6 +430,7 @@
 				B668B58C21241F5C00F60A79 /* SubProxy.m in Sources */,
 				327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */,
 				6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */,
+				327A687D25B821DE00EEBA29 /* ThreadSafeTool.m in Sources */,
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
 				32F49692259C63BF002B9B3A /* VideoModel.m in Sources */,
 				6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */,
