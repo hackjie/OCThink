@@ -39,6 +39,7 @@
 		6A797EFC2695935300537EDB /* LiveSegmentedTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EF92695935300537EDB /* LiveSegmentedTitleCell.swift */; };
 		6A797EFD2695935300537EDB /* LiveSegmentedTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EFA2695935300537EDB /* LiveSegmentedTitleItemModel.swift */; };
 		6A797EFE2695935300537EDB /* LiveSegmentedTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EFB2695935300537EDB /* LiveSegmentedTitleDataSource.swift */; };
+		6A79872B26972C4E00537EDB /* LayoutTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79872A26972C4E00537EDB /* LayoutTestViewController.swift */; };
 		6A8E49F421997CDA0063BCAC /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */; };
 		6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B6DC422CBB0AA009C1C1D /* YingDuan.m */; };
 		B634E8932125258D0028D2EF /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E8922125258D0028D2EF /* TimerViewController.m */; };
@@ -105,6 +106,7 @@
 		6A797EF92695935300537EDB /* LiveSegmentedTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedTitleCell.swift; sourceTree = "<group>"; };
 		6A797EFA2695935300537EDB /* LiveSegmentedTitleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedTitleItemModel.swift; sourceTree = "<group>"; };
 		6A797EFB2695935300537EDB /* LiveSegmentedTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedTitleDataSource.swift; sourceTree = "<group>"; };
+		6A79872A26972C4E00537EDB /* LayoutTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTestViewController.swift; sourceTree = "<group>"; };
 		6A8E49F221997CDA0063BCAC /* UINavigationController+Navbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Navbar.h"; sourceTree = "<group>"; };
 		6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Navbar.m"; sourceTree = "<group>"; };
 		6A9B6DC322CBB0AA009C1C1D /* YingDuan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YingDuan.h; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				6A797EC62695926500537EDB /* Core */,
 				6A797EC22695923B00537EDB /* SegmentedViewController.swift */,
 				6A797EC12695923B00537EDB /* OCThink-Bridging-Header.h */,
+				6A79872A26972C4E00537EDB /* LayoutTestViewController.swift */,
 			);
 			path = Swift;
 			sourceTree = "<group>";
@@ -542,6 +545,7 @@
 				6A797EDA2695927000537EDB /* LiveSegmentedViewTool.swift in Sources */,
 				6A797EFD2695935300537EDB /* LiveSegmentedTitleItemModel.swift in Sources */,
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
+				6A79872B26972C4E00537EDB /* LayoutTestViewController.swift in Sources */,
 				32F49692259C63BF002B9B3A /* VideoModel.m in Sources */,
 				6A797EC32695923B00537EDB /* SegmentedViewController.swift in Sources */,
 				6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */,
