@@ -21,6 +21,24 @@
 		6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0039AF219180860027773C /* NavigationTestTwoViewController.m */; };
 		6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A04B0BA219042710089ED74 /* UIViewController+Test.m */; };
 		6A205CF522E814BB006168C0 /* WeakStrongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A205CF422E814BB006168C0 /* WeakStrongViewController.m */; };
+		6A797EC32695923B00537EDB /* SegmentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EC22695923B00537EDB /* SegmentedViewController.swift */; };
+		6A797ECC2695926500537EDB /* LiveSegmentedBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EC72695926500537EDB /* LiveSegmentedBaseDataSource.swift */; };
+		6A797ECD2695926500537EDB /* LiveSegmentedBaseItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EC82695926500537EDB /* LiveSegmentedBaseItemModel.swift */; };
+		6A797ECE2695926500537EDB /* LiveSegmentedBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EC92695926500537EDB /* LiveSegmentedBaseCell.swift */; };
+		6A797ECF2695926500537EDB /* LiveSegmentedCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797ECA2695926500537EDB /* LiveSegmentedCollectionView.swift */; };
+		6A797ED02695926500537EDB /* LiveSegmentedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797ECB2695926500537EDB /* LiveSegmentedView.swift */; };
+		6A797ED72695927000537EDB /* LiveSegmentedListContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797ED32695927000537EDB /* LiveSegmentedListContainerView.swift */; };
+		6A797ED82695927000537EDB /* LiveSegmentedRTLLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797ED42695927000537EDB /* LiveSegmentedRTLLayout.swift */; };
+		6A797ED92695927000537EDB /* LiveSegmentedAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797ED52695927000537EDB /* LiveSegmentedAnimator.swift */; };
+		6A797EDA2695927000537EDB /* LiveSegmentedViewTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797ED62695927000537EDB /* LiveSegmentedViewTool.swift */; };
+		6A797EEA2695927E00537EDB /* LiveSegmentedIndicatorDotLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EDD2695927E00537EDB /* LiveSegmentedIndicatorDotLineView.swift */; };
+		6A797EED2695927E00537EDB /* LiveSegmentedIndicatorBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EE02695927E00537EDB /* LiveSegmentedIndicatorBaseView.swift */; };
+		6A797EF02695927E00537EDB /* LiveSegmentedIndicatorSelectedParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EE32695927E00537EDB /* LiveSegmentedIndicatorSelectedParams.swift */; };
+		6A797EF22695927E00537EDB /* LiveSegmentedIndicatorBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EE52695927E00537EDB /* LiveSegmentedIndicatorBackgroundView.swift */; };
+		6A797EF42695927E00537EDB /* LiveSegmentedIndicatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EE72695927E00537EDB /* LiveSegmentedIndicatorProtocol.swift */; };
+		6A797EFC2695935300537EDB /* LiveSegmentedTitleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EF92695935300537EDB /* LiveSegmentedTitleCell.swift */; };
+		6A797EFD2695935300537EDB /* LiveSegmentedTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EFA2695935300537EDB /* LiveSegmentedTitleItemModel.swift */; };
+		6A797EFE2695935300537EDB /* LiveSegmentedTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EFB2695935300537EDB /* LiveSegmentedTitleDataSource.swift */; };
 		6A8E49F421997CDA0063BCAC /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */; };
 		6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B6DC422CBB0AA009C1C1D /* YingDuan.m */; };
 		B634E8932125258D0028D2EF /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E8922125258D0028D2EF /* TimerViewController.m */; };
@@ -68,6 +86,25 @@
 		6A04B0BA219042710089ED74 /* UIViewController+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+Test.m"; sourceTree = "<group>"; };
 		6A205CF322E814BB006168C0 /* WeakStrongViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeakStrongViewController.h; sourceTree = "<group>"; };
 		6A205CF422E814BB006168C0 /* WeakStrongViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeakStrongViewController.m; sourceTree = "<group>"; };
+		6A797EC12695923B00537EDB /* OCThink-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OCThink-Bridging-Header.h"; sourceTree = "<group>"; };
+		6A797EC22695923B00537EDB /* SegmentedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedViewController.swift; sourceTree = "<group>"; };
+		6A797EC72695926500537EDB /* LiveSegmentedBaseDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedBaseDataSource.swift; sourceTree = "<group>"; };
+		6A797EC82695926500537EDB /* LiveSegmentedBaseItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedBaseItemModel.swift; sourceTree = "<group>"; };
+		6A797EC92695926500537EDB /* LiveSegmentedBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedBaseCell.swift; sourceTree = "<group>"; };
+		6A797ECA2695926500537EDB /* LiveSegmentedCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedCollectionView.swift; sourceTree = "<group>"; };
+		6A797ECB2695926500537EDB /* LiveSegmentedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedView.swift; sourceTree = "<group>"; };
+		6A797ED32695927000537EDB /* LiveSegmentedListContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedListContainerView.swift; sourceTree = "<group>"; };
+		6A797ED42695927000537EDB /* LiveSegmentedRTLLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedRTLLayout.swift; sourceTree = "<group>"; };
+		6A797ED52695927000537EDB /* LiveSegmentedAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedAnimator.swift; sourceTree = "<group>"; };
+		6A797ED62695927000537EDB /* LiveSegmentedViewTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedViewTool.swift; sourceTree = "<group>"; };
+		6A797EDD2695927E00537EDB /* LiveSegmentedIndicatorDotLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedIndicatorDotLineView.swift; sourceTree = "<group>"; };
+		6A797EE02695927E00537EDB /* LiveSegmentedIndicatorBaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedIndicatorBaseView.swift; sourceTree = "<group>"; };
+		6A797EE32695927E00537EDB /* LiveSegmentedIndicatorSelectedParams.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedIndicatorSelectedParams.swift; sourceTree = "<group>"; };
+		6A797EE52695927E00537EDB /* LiveSegmentedIndicatorBackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedIndicatorBackgroundView.swift; sourceTree = "<group>"; };
+		6A797EE72695927E00537EDB /* LiveSegmentedIndicatorProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedIndicatorProtocol.swift; sourceTree = "<group>"; };
+		6A797EF92695935300537EDB /* LiveSegmentedTitleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedTitleCell.swift; sourceTree = "<group>"; };
+		6A797EFA2695935300537EDB /* LiveSegmentedTitleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedTitleItemModel.swift; sourceTree = "<group>"; };
+		6A797EFB2695935300537EDB /* LiveSegmentedTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedTitleDataSource.swift; sourceTree = "<group>"; };
 		6A8E49F221997CDA0063BCAC /* UINavigationController+Navbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Navbar.h"; sourceTree = "<group>"; };
 		6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Navbar.m"; sourceTree = "<group>"; };
 		6A9B6DC322CBB0AA009C1C1D /* YingDuan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YingDuan.h; sourceTree = "<group>"; };
@@ -226,6 +263,64 @@
 			path = weakstrong;
 			sourceTree = "<group>";
 		};
+		6A797EC02695921F00537EDB /* Swift */ = {
+			isa = PBXGroup;
+			children = (
+				6A797EF82695935300537EDB /* Title */,
+				6A797EDC2695927E00537EDB /* Indicator */,
+				6A797ED22695927000537EDB /* Common */,
+				6A797EC62695926500537EDB /* Core */,
+				6A797EC22695923B00537EDB /* SegmentedViewController.swift */,
+				6A797EC12695923B00537EDB /* OCThink-Bridging-Header.h */,
+			);
+			path = Swift;
+			sourceTree = "<group>";
+		};
+		6A797EC62695926500537EDB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				6A797EC72695926500537EDB /* LiveSegmentedBaseDataSource.swift */,
+				6A797EC82695926500537EDB /* LiveSegmentedBaseItemModel.swift */,
+				6A797EC92695926500537EDB /* LiveSegmentedBaseCell.swift */,
+				6A797ECA2695926500537EDB /* LiveSegmentedCollectionView.swift */,
+				6A797ECB2695926500537EDB /* LiveSegmentedView.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6A797ED22695927000537EDB /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				6A797ED32695927000537EDB /* LiveSegmentedListContainerView.swift */,
+				6A797ED42695927000537EDB /* LiveSegmentedRTLLayout.swift */,
+				6A797ED52695927000537EDB /* LiveSegmentedAnimator.swift */,
+				6A797ED62695927000537EDB /* LiveSegmentedViewTool.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6A797EDC2695927E00537EDB /* Indicator */ = {
+			isa = PBXGroup;
+			children = (
+				6A797EDD2695927E00537EDB /* LiveSegmentedIndicatorDotLineView.swift */,
+				6A797EE02695927E00537EDB /* LiveSegmentedIndicatorBaseView.swift */,
+				6A797EE32695927E00537EDB /* LiveSegmentedIndicatorSelectedParams.swift */,
+				6A797EE52695927E00537EDB /* LiveSegmentedIndicatorBackgroundView.swift */,
+				6A797EE72695927E00537EDB /* LiveSegmentedIndicatorProtocol.swift */,
+			);
+			path = Indicator;
+			sourceTree = "<group>";
+		};
+		6A797EF82695935300537EDB /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				6A797EF92695935300537EDB /* LiveSegmentedTitleCell.swift */,
+				6A797EFA2695935300537EDB /* LiveSegmentedTitleItemModel.swift */,
+				6A797EFB2695935300537EDB /* LiveSegmentedTitleDataSource.swift */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
 		B634E890212525720028D2EF /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,6 +398,7 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				6A797EC02695921F00537EDB /* Swift */,
 				327A687A25B821B800EEBA29 /* Thread */,
 				32BC338B25B6A2BF0019FB89 /* Singleton */,
 				32F49689259C6304002B9B3A /* SwipeRoom */,
@@ -374,7 +470,7 @@
 				TargetAttributes = {
 					B668B56F21241EC400F60A79 = {
 						CreatedOnToolsVersion = 9.4.1;
-						LastSwiftMigration = 0940;
+						LastSwiftMigration = 1240;
 					};
 				};
 			};
@@ -414,33 +510,51 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A797ECC2695926500537EDB /* LiveSegmentedBaseDataSource.swift in Sources */,
+				6A797ED92695927000537EDB /* LiveSegmentedAnimator.swift in Sources */,
+				6A797EF42695927E00537EDB /* LiveSegmentedIndicatorProtocol.swift in Sources */,
 				6A8E49F421997CDA0063BCAC /* UINavigationController+Navbar.m in Sources */,
+				6A797EEA2695927E00537EDB /* LiveSegmentedIndicatorDotLineView.swift in Sources */,
 				B6382FD9212AC9F6002B4718 /* WeakProxy.m in Sources */,
 				B668B57821241EC400F60A79 /* ViewController.m in Sources */,
 				B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */,
 				32F4968F259C6394002B9B3A /* PlayerScrollView.m in Sources */,
+				6A797ECD2695926500537EDB /* LiveSegmentedBaseItemModel.swift in Sources */,
 				32018D6C24B2C1CF000FF26A /* MailViewController.m in Sources */,
+				6A797EFE2695935300537EDB /* LiveSegmentedTitleDataSource.swift in Sources */,
+				6A797EED2695927E00537EDB /* LiveSegmentedIndicatorBaseView.swift in Sources */,
 				6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */,
+				6A797ED02695926500537EDB /* LiveSegmentedView.swift in Sources */,
 				32BC338F25B6A2E30019FB89 /* OCSingleton.m in Sources */,
+				6A797ECE2695926500537EDB /* LiveSegmentedBaseCell.swift in Sources */,
 				6A0039B0219180860027773C /* NavigationTestTwoViewController.m in Sources */,
 				32116F68247BACEF007F0D93 /* CustomPageControl.m in Sources */,
 				B63CB453213CCE43000A113B /* TextStyleViewController.m in Sources */,
+				6A797ED82695927000537EDB /* LiveSegmentedRTLLayout.swift in Sources */,
 				32C6FA74255B95060018D994 /* TestExceptions.m in Sources */,
 				B64181AE215F215C0093F5FD /* ImageViewController.m in Sources */,
 				B668B58C21241F5C00F60A79 /* SubProxy.m in Sources */,
 				327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */,
 				6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */,
 				327A687D25B821DE00EEBA29 /* ThreadSafeTool.m in Sources */,
+				6A797ED72695927000537EDB /* LiveSegmentedListContainerView.swift in Sources */,
+				6A797EFC2695935300537EDB /* LiveSegmentedTitleCell.swift in Sources */,
+				6A797EDA2695927000537EDB /* LiveSegmentedViewTool.swift in Sources */,
+				6A797EFD2695935300537EDB /* LiveSegmentedTitleItemModel.swift in Sources */,
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
 				32F49692259C63BF002B9B3A /* VideoModel.m in Sources */,
+				6A797EC32695923B00537EDB /* SegmentedViewController.swift in Sources */,
 				6A0039AD2191806E0027773C /* NavigationTestOneViewController.m in Sources */,
 				32116F6B247BADB1007F0D93 /* UIComponentViewController.m in Sources */,
 				32B4064A24C19D9400DF4C49 /* TestNSObjectViewController.m in Sources */,
 				B668B58321241EC500F60A79 /* main.m in Sources */,
+				6A797EF22695927E00537EDB /* LiveSegmentedIndicatorBackgroundView.swift in Sources */,
 				B6382FDD212ACEAC002B4718 /* MsgViewController.m in Sources */,
 				B634E89B212553950028D2EF /* StringViewController.m in Sources */,
+				6A797EF02695927E00537EDB /* LiveSegmentedIndicatorSelectedParams.swift in Sources */,
 				B668B57521241EC400F60A79 /* AppDelegate.m in Sources */,
 				6A205CF522E814BB006168C0 /* WeakStrongViewController.m in Sources */,
+				6A797ECF2695926500537EDB /* LiveSegmentedCollectionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -593,8 +707,9 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoli.OCThink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "OCThink/Swift/OCThink-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -616,7 +731,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoli.OCThink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 3.0;
+				SWIFT_OBJC_BRIDGING_HEADER = "OCThink/Swift/OCThink-Bridging-Header.h";
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

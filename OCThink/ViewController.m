@@ -21,6 +21,7 @@
 #import "TestNSObjectViewController.h"
 #import "TestExceptions.h"
 #import "OCSingleton.h"
+#import "OCThink-Swift.h"
 
 @interface ViewController ()
 @property (nonatomic, strong) UIButton *jumpBtn;
@@ -128,8 +129,11 @@
 
 - (void)jump
 {
-    TestNSObjectViewController *VC = [[TestNSObjectViewController alloc] init];
-    [self.navigationController pushViewController:VC animated:YES];
+//    TestNSObjectViewController *VC = [[TestNSObjectViewController alloc] init];
+//    [self.navigationController pushViewController:VC animated:YES];
+  
+  LJSegmentedViewController *vc = [[LJSegmentedViewController alloc] init];
+  [self.navigationController pushViewController:vc animated:YES];
 }
 
 @end
