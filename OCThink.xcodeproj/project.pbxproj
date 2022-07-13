@@ -42,6 +42,7 @@
 		6A79872B26972C4E00537EDB /* LayoutTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79872A26972C4E00537EDB /* LayoutTestViewController.swift */; };
 		6A8E49F421997CDA0063BCAC /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */; };
 		6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B6DC422CBB0AA009C1C1D /* YingDuan.m */; };
+		6A9F77ED287EA8D40017C0F9 /* OCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F77EC287EA8D40017C0F9 /* OCTools.m */; };
 		B634E8932125258D0028D2EF /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E8922125258D0028D2EF /* TimerViewController.m */; };
 		B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89621252B8E0028D2EF /* BaseViewController.m */; };
 		B634E89B212553950028D2EF /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89A212553950028D2EF /* StringViewController.m */; };
@@ -111,6 +112,8 @@
 		6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Navbar.m"; sourceTree = "<group>"; };
 		6A9B6DC322CBB0AA009C1C1D /* YingDuan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YingDuan.h; sourceTree = "<group>"; };
 		6A9B6DC422CBB0AA009C1C1D /* YingDuan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YingDuan.m; sourceTree = "<group>"; };
+		6A9F77EB287EA8D40017C0F9 /* OCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTools.h; sourceTree = "<group>"; };
+		6A9F77EC287EA8D40017C0F9 /* OCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTools.m; sourceTree = "<group>"; };
 		B634E8912125258D0028D2EF /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		B634E8922125258D0028D2EF /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		B634E89521252B8E0028D2EF /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -324,6 +327,15 @@
 			path = Title;
 			sourceTree = "<group>";
 		};
+		6A9F77EA287EA8B50017C0F9 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				6A9F77EB287EA8D40017C0F9 /* OCTools.h */,
+				6A9F77EC287EA8D40017C0F9 /* OCTools.m */,
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		B634E890212525720028D2EF /* NSTimer */ = {
 			isa = PBXGroup;
 			children = (
@@ -401,6 +413,7 @@
 		B668B57221241EC400F60A79 /* OCThink */ = {
 			isa = PBXGroup;
 			children = (
+				6A9F77EA287EA8B50017C0F9 /* Tools */,
 				6A797EC02695921F00537EDB /* Swift */,
 				327A687A25B821B800EEBA29 /* Thread */,
 				32BC338B25B6A2BF0019FB89 /* Singleton */,
@@ -545,6 +558,7 @@
 				6A797EDA2695927000537EDB /* LiveSegmentedViewTool.swift in Sources */,
 				6A797EFD2695935300537EDB /* LiveSegmentedTitleItemModel.swift in Sources */,
 				B634E8932125258D0028D2EF /* TimerViewController.m in Sources */,
+				6A9F77ED287EA8D40017C0F9 /* OCTools.m in Sources */,
 				6A79872B26972C4E00537EDB /* LayoutTestViewController.swift in Sources */,
 				32F49692259C63BF002B9B3A /* VideoModel.m in Sources */,
 				6A797EC32695923B00537EDB /* SegmentedViewController.swift in Sources */,

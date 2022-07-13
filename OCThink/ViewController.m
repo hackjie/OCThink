@@ -40,6 +40,9 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.title = @"Start";
+  
+    NSLog(@"%f", [self getWindowSafeAreaTop]);
+    NSLog(@"%f", [self getWindowSafeAreaBottom]);
 
     UIButton *jumpBtn = [[UIButton alloc] init];
     jumpBtn.frame = CGRectMake(60, 120, 80, 40);
@@ -134,6 +137,22 @@
   
   LJSegmentedViewController *vc = [[LJSegmentedViewController alloc] init];
   [self.navigationController pushViewController:vc animated:YES];
+}
+
+// 获取window顶部安全区高度
+- (CGFloat)getWindowSafeAreaTop {
+    if (@available(iOS 11.0, *)) {
+        return [UIApplication sharedApplication].delegate.window.safeAreaInsets.top;//44
+    }
+    return 0.0;
+}
+
+// 获取window底部安全区高度
+- (CGFloat)getWindowSafeAreaBottom {
+    if (@available(iOS 11.0, *)) {
+        return [UIApplication sharedApplication].delegate.window.safeAreaInsets.bottom;//34
+    }
+    return 0.0;
 }
 
 @end
