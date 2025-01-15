@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -40,9 +40,16 @@
 		6A797EFD2695935300537EDB /* LiveSegmentedTitleItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EFA2695935300537EDB /* LiveSegmentedTitleItemModel.swift */; };
 		6A797EFE2695935300537EDB /* LiveSegmentedTitleDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A797EFB2695935300537EDB /* LiveSegmentedTitleDataSource.swift */; };
 		6A79872B26972C4E00537EDB /* LayoutTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A79872A26972C4E00537EDB /* LayoutTestViewController.swift */; };
+		6A8A8F792D37604100C7C2E3 /* LALLinearLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A8F702D37604000C7C2E3 /* LALLinearLayout.m */; };
+		6A8A8F7A2D37604100C7C2E3 /* LALGravity.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A8F712D37604000C7C2E3 /* LALGravity.m */; };
+		6A8A8F7B2D37604100C7C2E3 /* LALMainLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A8F722D37604000C7C2E3 /* LALMainLayout.m */; };
+		6A8A8F7C2D37604100C7C2E3 /* LALMeasureSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A8F762D37604100C7C2E3 /* LALMeasureSpec.m */; };
+		6A8A8F7D2D37604100C7C2E3 /* LALLayoutUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8A8F772D37604100C7C2E3 /* LALLayoutUtils.m */; };
 		6A8E49F421997CDA0063BCAC /* UINavigationController+Navbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */; };
 		6A9B6DC522CBB0AA009C1C1D /* YingDuan.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9B6DC422CBB0AA009C1C1D /* YingDuan.m */; };
 		6A9F77ED287EA8D40017C0F9 /* OCTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A9F77EC287EA8D40017C0F9 /* OCTools.m */; };
+		6AFE62522D2C1058003F2A5A /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AFE62512D2C1058003F2A5A /* File.swift */; };
+		A5C65E3C0B98571CD7034D7F /* Pods_OCThink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 538DC7BC2614EF77B8EA281A /* Pods_OCThink.framework */; };
 		B634E8932125258D0028D2EF /* TimerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E8922125258D0028D2EF /* TimerViewController.m */; };
 		B634E89721252B8E0028D2EF /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89621252B8E0028D2EF /* BaseViewController.m */; };
 		B634E89B212553950028D2EF /* StringViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B634E89A212553950028D2EF /* StringViewController.m */; };
@@ -80,6 +87,7 @@
 		32F4968E259C6394002B9B3A /* PlayerScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlayerScrollView.m; sourceTree = "<group>"; };
 		32F49690259C63BF002B9B3A /* VideoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VideoModel.h; sourceTree = "<group>"; };
 		32F49691259C63BF002B9B3A /* VideoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VideoModel.m; sourceTree = "<group>"; };
+		538DC7BC2614EF77B8EA281A /* Pods_OCThink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OCThink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A0039AB2191806E0027773C /* NavigationTestOneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestOneViewController.h; sourceTree = "<group>"; };
 		6A0039AC2191806E0027773C /* NavigationTestOneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NavigationTestOneViewController.m; sourceTree = "<group>"; };
 		6A0039AE219180860027773C /* NavigationTestTwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NavigationTestTwoViewController.h; sourceTree = "<group>"; };
@@ -108,12 +116,25 @@
 		6A797EFA2695935300537EDB /* LiveSegmentedTitleItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedTitleItemModel.swift; sourceTree = "<group>"; };
 		6A797EFB2695935300537EDB /* LiveSegmentedTitleDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveSegmentedTitleDataSource.swift; sourceTree = "<group>"; };
 		6A79872A26972C4E00537EDB /* LayoutTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutTestViewController.swift; sourceTree = "<group>"; };
+		6A8A8F6F2D37604000C7C2E3 /* LALMeasureSpec.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALMeasureSpec.h; sourceTree = "<group>"; };
+		6A8A8F702D37604000C7C2E3 /* LALLinearLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALLinearLayout.m; sourceTree = "<group>"; };
+		6A8A8F712D37604000C7C2E3 /* LALGravity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALGravity.m; sourceTree = "<group>"; };
+		6A8A8F722D37604000C7C2E3 /* LALMainLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALMainLayout.m; sourceTree = "<group>"; };
+		6A8A8F732D37604000C7C2E3 /* LALGravity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALGravity.h; sourceTree = "<group>"; };
+		6A8A8F742D37604000C7C2E3 /* LALMainLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALMainLayout.h; sourceTree = "<group>"; };
+		6A8A8F752D37604000C7C2E3 /* LALLayoutUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALLayoutUtils.h; sourceTree = "<group>"; };
+		6A8A8F762D37604100C7C2E3 /* LALMeasureSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALMeasureSpec.m; sourceTree = "<group>"; };
+		6A8A8F772D37604100C7C2E3 /* LALLayoutUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LALLayoutUtils.m; sourceTree = "<group>"; };
+		6A8A8F782D37604100C7C2E3 /* LALLinearLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LALLinearLayout.h; sourceTree = "<group>"; };
 		6A8E49F221997CDA0063BCAC /* UINavigationController+Navbar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+Navbar.h"; sourceTree = "<group>"; };
 		6A8E49F321997CDA0063BCAC /* UINavigationController+Navbar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+Navbar.m"; sourceTree = "<group>"; };
 		6A9B6DC322CBB0AA009C1C1D /* YingDuan.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YingDuan.h; sourceTree = "<group>"; };
 		6A9B6DC422CBB0AA009C1C1D /* YingDuan.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YingDuan.m; sourceTree = "<group>"; };
 		6A9F77EB287EA8D40017C0F9 /* OCTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCTools.h; sourceTree = "<group>"; };
 		6A9F77EC287EA8D40017C0F9 /* OCTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OCTools.m; sourceTree = "<group>"; };
+		6AFE62512D2C1058003F2A5A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		7CB890D84099A7FDE82F88D8 /* Pods-OCThink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCThink.release.xcconfig"; path = "Target Support Files/Pods-OCThink/Pods-OCThink.release.xcconfig"; sourceTree = "<group>"; };
+		9425F9C4BCAF3106C426CC25 /* Pods-OCThink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OCThink.debug.xcconfig"; path = "Target Support Files/Pods-OCThink/Pods-OCThink.debug.xcconfig"; sourceTree = "<group>"; };
 		B634E8912125258D0028D2EF /* TimerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TimerViewController.h; sourceTree = "<group>"; };
 		B634E8922125258D0028D2EF /* TimerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TimerViewController.m; sourceTree = "<group>"; };
 		B634E89521252B8E0028D2EF /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
@@ -147,12 +168,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5C65E3C0B98571CD7034D7F /* Pods_OCThink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08C0228D001137F8B326DA67 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9425F9C4BCAF3106C426CC25 /* Pods-OCThink.debug.xcconfig */,
+				7CB890D84099A7FDE82F88D8 /* Pods-OCThink.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		32018D6924B2C18B000FF26A /* Mail */ = {
 			isa = PBXGroup;
 			children = (
@@ -202,8 +233,10 @@
 		32B4064724C19D6D00DF4C49 /* Object */ = {
 			isa = PBXGroup;
 			children = (
+				6A8A8F6E2D37602800C7C2E3 /* layout */,
 				32B4064824C19D9400DF4C49 /* TestNSObjectViewController.h */,
 				32B4064924C19D9400DF4C49 /* TestNSObjectViewController.m */,
+				6AFE62512D2C1058003F2A5A /* File.swift */,
 			);
 			path = Object;
 			sourceTree = "<group>";
@@ -235,6 +268,14 @@
 				32F49691259C63BF002B9B3A /* VideoModel.m */,
 			);
 			path = SwipeRoom;
+			sourceTree = "<group>";
+		};
+		439EA001E87D08AF6FEFA3CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				538DC7BC2614EF77B8EA281A /* Pods_OCThink.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		6A0039AA219180400027773C /* Navigation */ = {
@@ -327,6 +368,23 @@
 			path = Title;
 			sourceTree = "<group>";
 		};
+		6A8A8F6E2D37602800C7C2E3 /* layout */ = {
+			isa = PBXGroup;
+			children = (
+				6A8A8F732D37604000C7C2E3 /* LALGravity.h */,
+				6A8A8F712D37604000C7C2E3 /* LALGravity.m */,
+				6A8A8F752D37604000C7C2E3 /* LALLayoutUtils.h */,
+				6A8A8F772D37604100C7C2E3 /* LALLayoutUtils.m */,
+				6A8A8F782D37604100C7C2E3 /* LALLinearLayout.h */,
+				6A8A8F702D37604000C7C2E3 /* LALLinearLayout.m */,
+				6A8A8F742D37604000C7C2E3 /* LALMainLayout.h */,
+				6A8A8F722D37604000C7C2E3 /* LALMainLayout.m */,
+				6A8A8F6F2D37604000C7C2E3 /* LALMeasureSpec.h */,
+				6A8A8F762D37604100C7C2E3 /* LALMeasureSpec.m */,
+			);
+			path = layout;
+			sourceTree = "<group>";
+		};
 		6A9F77EA287EA8B50017C0F9 /* Tools */ = {
 			isa = PBXGroup;
 			children = (
@@ -399,6 +457,8 @@
 			children = (
 				B668B57221241EC400F60A79 /* OCThink */,
 				B668B57121241EC400F60A79 /* Products */,
+				08C0228D001137F8B326DA67 /* Pods */,
+				439EA001E87D08AF6FEFA3CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -462,9 +522,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B668B58621241EC500F60A79 /* Build configuration list for PBXNativeTarget "OCThink" */;
 			buildPhases = (
+				63778C9ED9BAE765B7FA8A59 /* [CP] Check Pods Manifest.lock */,
 				B668B56C21241EC400F60A79 /* Sources */,
 				B668B56D21241EC400F60A79 /* Frameworks */,
 				B668B56E21241EC400F60A79 /* Resources */,
+				4CC0AF4F0EC1B46C9DCFBEEE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -521,6 +583,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4CC0AF4F0EC1B46C9DCFBEEE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCThink/Pods-OCThink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OCThink/Pods-OCThink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OCThink/Pods-OCThink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		63778C9ED9BAE765B7FA8A59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OCThink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B668B56C21241EC400F60A79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -550,10 +654,16 @@
 				32C6FA74255B95060018D994 /* TestExceptions.m in Sources */,
 				B64181AE215F215C0093F5FD /* ImageViewController.m in Sources */,
 				B668B58C21241F5C00F60A79 /* SubProxy.m in Sources */,
+				6A8A8F7B2D37604100C7C2E3 /* LALMainLayout.m in Sources */,
 				327A25682473B60000CB41BE /* AutolayoutViewController.m in Sources */,
+				6AFE62522D2C1058003F2A5A /* File.swift in Sources */,
 				6A04B0BB219042710089ED74 /* UIViewController+Test.m in Sources */,
+				6A8A8F7D2D37604100C7C2E3 /* LALLayoutUtils.m in Sources */,
 				327A687D25B821DE00EEBA29 /* ThreadSafeTool.m in Sources */,
+				6A8A8F7C2D37604100C7C2E3 /* LALMeasureSpec.m in Sources */,
+				6A8A8F792D37604100C7C2E3 /* LALLinearLayout.m in Sources */,
 				6A797ED72695927000537EDB /* LiveSegmentedListContainerView.swift in Sources */,
+				6A8A8F7A2D37604100C7C2E3 /* LALGravity.m in Sources */,
 				6A797EFC2695935300537EDB /* LiveSegmentedTitleCell.swift in Sources */,
 				6A797EDA2695927000537EDB /* LiveSegmentedViewTool.swift in Sources */,
 				6A797EFD2695935300537EDB /* LiveSegmentedTitleItemModel.swift in Sources */,
@@ -710,14 +820,16 @@
 		};
 		B668B58721241EC500F60A79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9425F9C4BCAF3106C426CC25 /* Pods-OCThink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9J87B48WLP;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9J87B48WLP;
 				INFOPLIST_FILE = OCThink/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -725,6 +837,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoli.OCThink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Wildcard_Development;
 				SWIFT_OBJC_BRIDGING_HEADER = "OCThink/Swift/OCThink-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
@@ -734,14 +847,16 @@
 		};
 		B668B58821241EC500F60A79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CB890D84099A7FDE82F88D8 /* Pods-OCThink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 9J87B48WLP;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = 9J87B48WLP;
 				INFOPLIST_FILE = OCThink/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -749,6 +864,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.leoli.OCThink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = Wildcard_Development;
 				SWIFT_OBJC_BRIDGING_HEADER = "OCThink/Swift/OCThink-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";

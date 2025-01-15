@@ -22,9 +22,13 @@
 #import "TestExceptions.h"
 #import "OCSingleton.h"
 #import "OCThink-Swift.h"
+#import <Masonry/Masonry.h>
 
 @interface ViewController ()
 @property (nonatomic, strong) UIButton *jumpBtn;
+@property (nonatomic, strong) UILabel *label1;
+@property (nonatomic, strong) UILabel *label2;
+@property (nonatomic, strong) TestNSObjectViewController *objVC;
 @end
 
 @implementation ViewController
@@ -40,9 +44,11 @@
     // Do any additional setup after loading the view, typically from a nib.
     
     self.title = @"Start";
+    _objVC = [[TestNSObjectViewController alloc] init];
+    
   
-    NSLog(@"%f", [self getWindowSafeAreaTop]);
-    NSLog(@"%f", [self getWindowSafeAreaBottom]);
+//    NSLog(@"%f", [self getWindowSafeAreaTop]);
+//    NSLog(@"%f", [self getWindowSafeAreaBottom]);
 
     UIButton *jumpBtn = [[UIButton alloc] init];
     jumpBtn.frame = CGRectMake(60, 120, 80, 40);
@@ -53,53 +59,53 @@
     _jumpBtn = jumpBtn;
     
     self.view.backgroundColor = [UIColor lightGrayColor];
-    
-    NSMutableArray *array = [@[@"hello://fff", @"hddhd"] mutableCopy];
-    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
-        return ![evaluatedObject containsString:@"hello:"];
-    }];
-    [array filterUsingPredicate:predicate];
-    NSLog(@"%@", array);
-    
-    [OCSingleton shareInstance];
-    
-    sleep(2);
-    
-    [OCSingleton destoryInstance];
-    
-    
-    // less use @try catch, but sometimes can use it to debug
-    @try {
-        TestExceptions *exception = [[TestExceptions alloc] init];
-        // exception not release
-        @throw [[NSException alloc] initWithName:@"主动异常" reason:@"这是错误原因" userInfo:nil];
-    }
-    @catch (NSException *e) {
-        NSLog(@"%@",e);
-    }
-    
-    // like this eg
-    NSArray* arraytest = [[NSArray alloc] init];
-     
-    @try
-    {
-      // Attempt access to an empty array
-      NSLog(@"Object: %@", [arraytest objectAtIndex:0]);
-     
-    }
-    @catch (NSException *exception)
-    {
-      // Print exception information
-      NSLog( @"NSException caught" );
-      NSLog( @"Name: %@", exception.name);
-      NSLog( @"Reason: %@", exception.reason );
-      return;
-    }
-    @finally
-    {
-      // Cleanup, in both success and fail cases
-      NSLog( @"In finally block");
-    }
+//    
+//    NSMutableArray *array = [@[@"hello://fff", @"hddhd"] mutableCopy];
+//    NSPredicate *predicate = [NSPredicate predicateWithBlock:^BOOL(id  _Nullable evaluatedObject, NSDictionary<NSString *,id> * _Nullable bindings) {
+//        return ![evaluatedObject containsString:@"hello:"];
+//    }];
+//    [array filterUsingPredicate:predicate];
+//    NSLog(@"%@", array);
+//    
+//    [OCSingleton shareInstance];
+//    
+//    //sleep(2);
+//    
+//    [OCSingleton destoryInstance];
+//    
+//    
+//    // less use @try catch, but sometimes can use it to debug
+//    @try {
+//        TestExceptions *exception = [[TestExceptions alloc] init];
+//        // exception not release
+//        @throw [[NSException alloc] initWithName:@"主动异常" reason:@"这是错误原因" userInfo:nil];
+//    }
+//    @catch (NSException *e) {
+//        NSLog(@"%@",e);
+//    }
+//    
+//    // like this eg
+//    NSArray* arraytest = [[NSArray alloc] init];
+//     
+//    @try
+//    {
+//      // Attempt access to an empty array
+//      NSLog(@"Object: %@", [arraytest objectAtIndex:0]);
+//     
+//    }
+//    @catch (NSException *exception)
+//    {
+//      // Print exception information
+//      NSLog( @"NSException caught" );
+//      NSLog( @"Name: %@", exception.name);
+//      NSLog( @"Reason: %@", exception.reason );
+//      return;
+//    }
+//    @finally
+//    {
+//      // Cleanup, in both success and fail cases
+//      NSLog( @"In finally block");
+//    }
 }
 
 - (void)viewSafeAreaInsetsDidChange
@@ -132,11 +138,11 @@
 
 - (void)jump
 {
-//    TestNSObjectViewController *VC = [[TestNSObjectViewController alloc] init];
-//    [self.navigationController pushViewController:VC animated:YES];
+    TestNSObjectViewController *VC = [[TestNSObjectViewController alloc] init];
+    [self.navigationController pushViewController:VC animated:YES];
   
-  LJSegmentedViewController *vc = [[LJSegmentedViewController alloc] init];
-  [self.navigationController pushViewController:vc animated:YES];
+//  LJSegmentedViewController *vc = [[LJSegmentedViewController alloc] init];
+//  [self.navigationController pushViewController:vc animated:YES];
 }
 
 // 获取window顶部安全区高度
