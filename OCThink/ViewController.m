@@ -22,6 +22,7 @@
 #import "TestExceptions.h"
 #import "OCSingleton.h"
 #import "OCThink-Swift.h"
+#import "PerformanceTestViewController.h"
 #import <Masonry/Masonry.h>
 
 @interface ViewController ()
@@ -138,7 +139,7 @@
 
 - (void)jump
 {
-    TestNSObjectViewController *VC = [[TestNSObjectViewController alloc] init];
+    PerformanceTestViewController *VC = [[PerformanceTestViewController alloc] init];
     [self.navigationController pushViewController:VC animated:YES];
   
 //  LJSegmentedViewController *vc = [[LJSegmentedViewController alloc] init];
